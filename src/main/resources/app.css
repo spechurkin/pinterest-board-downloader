@@ -1,0 +1,324 @@
+.root {
+    -fx-font-family: "Segoe UI", "Inter", sans-serif;
+    -fx-background-color: -app-bg;
+    -fx-text-fill: -app-text;
+}
+
+.label {
+    -fx-text-fill: -app-text;
+}
+
+.title {
+    -fx-font-size: 28px;
+    -fx-font-weight: 800;
+}
+
+.subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: -app-muted;
+}
+
+.settings-bar {
+    -fx-padding: 0;
+    -fx-spacing: 12px;
+    -fx-alignment: CENTER_RIGHT;
+}
+
+.setting-item {
+    -fx-spacing: 6px;
+    -fx-alignment: TOP_LEFT;
+}
+
+.settings-label {
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-text-fill: -app-muted;
+    -fx-padding: 0 0 0 2px;
+}
+
+.card {
+    -fx-background-color: -app-card;
+    -fx-background-radius: 16px;
+    -fx-border-radius: 16px;
+    -fx-border-color: -app-border;
+    -fx-border-width: 1px;
+}
+
+.field-label {
+    -fx-font-weight: 700;
+    -fx-text-fill: -app-field-text;
+}
+
+.status-label {
+    -fx-font-weight: 700;
+}
+
+.muted-label {
+    -fx-text-fill: -app-muted;
+}
+
+.text-field,
+.password-field,
+.combo-box-base,
+.text-area {
+    -fx-background-color: -app-input;
+    -fx-control-inner-background: -app-input;
+    -fx-text-fill: -app-text;
+    -fx-prompt-text-fill: -app-placeholder;
+    -fx-highlight-fill: -app-accent;
+    -fx-highlight-text-fill: white;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: -app-input-border;
+    -fx-border-width: 1px;
+    -fx-padding: 8px 10px;
+}
+
+.text-field:focused,
+.password-field:focused,
+.combo-box-base:focused,
+.text-area:focused {
+    -fx-border-color: -app-accent-focus;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: -app-text;
+    -fx-background-color: transparent;
+}
+
+.combo-box .arrow {
+    -fx-background-color: -app-text;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: -app-popup;
+    -fx-border-color: -app-input-border;
+}
+
+.combo-box-popup .list-cell {
+    -fx-background-color: -app-popup;
+    -fx-text-fill: -app-text;
+    -fx-padding: 9px 12px;
+}
+
+.combo-box-popup .list-cell:hover,
+.combo-box-popup .list-cell:selected {
+    -fx-background-color: -app-popup-hover;
+}
+
+.text-area .content {
+    -fx-background-color: -app-log;
+}
+
+.button {
+    -fx-cursor: hand;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px 16px;
+    -fx-font-weight: 700;
+}
+
+.primary-button {
+    -fx-background-color: -app-accent;
+    -fx-text-fill: white;
+}
+
+.primary-button:hover {
+    -fx-background-color: -app-accent-hover;
+}
+
+.secondary-button {
+    -fx-background-color: -app-secondary;
+    -fx-text-fill: -app-text;
+    -fx-border-color: -app-secondary-border;
+    -fx-border-radius: 10px;
+}
+
+.secondary-button:hover {
+    -fx-background-color: -app-secondary-hover;
+}
+
+.check-box {
+    -fx-text-fill: -app-field-text;
+}
+
+.check-box .box {
+    -fx-background-color: -app-input;
+    -fx-border-color: -app-checkbox-border;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.check-box:selected .box {
+    -fx-background-color: -app-accent;
+    -fx-border-color: -app-accent;
+}
+
+.progress-bar {
+    -fx-accent: -app-accent;
+}
+
+.progress-bar .track {
+    -fx-background-color: -app-progress-track;
+    -fx-background-radius: 6px;
+}
+
+.progress-bar .bar {
+    -fx-background-radius: 6px;
+}
+
+.context-menu {
+    -fx-background-color: -app-popup;
+    -fx-border-color: -app-input-border;
+}
+
+.menu-item .label {
+    -fx-text-fill: -app-text;
+}
+
+.menu-item:focused {
+    -fx-background-color: -app-popup-hover;
+}
+
+
+/* Unified form geometry */
+.form-card {
+    -fx-padding: 22px;
+}
+
+.form-control,
+.field-stack {
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+}
+
+.form-action-button {
+    -fx-min-width: 128px;
+    -fx-pref-width: 128px;
+    -fx-max-width: 128px;
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+    -fx-padding: 0 14px;
+    -fx-alignment: CENTER;
+}
+
+.split-menu-button.form-action-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.split-menu-button.form-action-button > .label {
+    -fx-background-color: -app-secondary;
+    -fx-text-fill: -app-text;
+    -fx-border-color: -app-secondary-border;
+    -fx-border-width: 1px 0 1px 1px;
+    -fx-background-radius: 10px 0 0 10px;
+    -fx-border-radius: 10px 0 0 10px;
+    -fx-alignment: CENTER;
+    -fx-font-weight: 600;
+}
+
+.split-menu-button.form-action-button > .arrow-button {
+    -fx-background-color: -app-secondary;
+    -fx-border-color: -app-secondary-border;
+    -fx-border-width: 1px;
+    -fx-background-radius: 0 10px 10px 0;
+    -fx-border-radius: 0 10px 10px 0;
+    -fx-padding: 0 10px;
+}
+
+.split-menu-button.form-action-button:hover > .label,
+.split-menu-button.form-action-button:hover > .arrow-button {
+    -fx-background-color: -app-secondary-hover;
+}
+
+.split-menu-button.form-action-button > .arrow-button > .arrow {
+    -fx-background-color: -app-text;
+}
+
+.options-panel {
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-padding: 0 12px;
+    -fx-background-color: -app-options-bg;
+    -fx-background-radius: 10px;
+    -fx-border-color: -app-input-border;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+}
+
+.form-card .field-label {
+    -fx-font-weight: 600;
+}
+
+.form-card .button,
+.form-card .split-menu-button {
+    -fx-font-weight: 600;
+}
+
+
+
+.text-field.form-control,
+.password-field.form-control,
+.combo-box.form-control {
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+}
+
+/* Remove visual mismatch between text fields and combo boxes */
+.combo-box.form-control {
+    -fx-padding: 0;
+}
+
+.combo-box.form-control > .list-cell {
+    -fx-padding: 0 12px;
+}
+
+.combo-box.form-control > .arrow-button {
+    -fx-padding: 0 12px;
+}
+
+
+/* Header settings: same geometry as the rest of the application controls. */
+.combo-box.settings-control {
+    -fx-min-width: 140px;
+    -fx-pref-width: 140px;
+    -fx-max-width: 140px;
+
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+
+    /*
+     * Generic .combo-box-base has padding for normal controls.
+     * JavaFX ComboBox already has its own list-cell and arrow-button,
+     * so that padding was shrinking/clipping the visible text.
+     */
+    -fx-padding: 0;
+    -fx-font-size: 13px;
+}
+
+.combo-box.settings-control > .list-cell {
+    -fx-min-height: 38px;
+    -fx-pref-height: 38px;
+    -fx-max-height: 38px;
+    -fx-padding: 0 12px;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.combo-box.settings-control > .arrow-button {
+    -fx-min-width: 34px;
+    -fx-pref-width: 34px;
+    -fx-padding: 0 11px 0 8px;
+    -fx-alignment: CENTER;
+}
+
+.combo-box.settings-control > .arrow-button > .arrow {
+    -fx-padding: 3px;
+}
+
+.combo-box.settings-control .text {
+    -fx-font-smoothing-type: lcd;
+}

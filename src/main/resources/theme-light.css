@@ -1,0 +1,23 @@
+.root {
+    -app-bg: #f3f5f8;
+    -app-card: #ffffff;
+    -app-border: #dbe1e8;
+    -app-input: #ffffff;
+    -app-log: #f8fafc;
+    -app-text: #18202a;
+    -app-field-text: #27313d;
+    -app-muted: #66717f;
+    -app-placeholder: #8b96a3;
+    -app-input-border: #cfd7e1;
+    -app-accent: #2563eb;
+    -app-accent-hover: #3470ee;
+    -app-accent-focus: #2563eb;
+    -app-secondary: #eef2f6;
+    -app-secondary-hover: #e4eaf0;
+    -app-secondary-border: #d5dce5;
+    -app-checkbox-border: #aeb8c5;
+    -app-progress-track: #dce3eb;
+    -app-popup: #ffffff;
+    -app-popup-hover: #e8f0ff;
+    -app-options-bg: #f8fafc;
+}
